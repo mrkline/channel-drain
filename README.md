@@ -1,4 +1,4 @@
-# Channel-drain
+# channel-drain
 
 Drains a (crossbeam) channel.
 
@@ -46,8 +46,8 @@ fn smoke_test() {
     drop(tx2);
 
     drain!{
-        rx1(bar) => { println!("Feynman Says: \"{}\"", bar) },
-        rx2(baz) => println!("Some num: {}", baz)
+        rx1(wisdom) => { println!("Feynman Says: \"{}\"", wisdom) },
+        rx2(num) => println!("Some num: {}", num)
     };
 }
 ```

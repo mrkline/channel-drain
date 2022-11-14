@@ -1,5 +1,4 @@
 use channel_drain::drain;
-
 use crossbeam::channel::bounded;
 
 #[test]
